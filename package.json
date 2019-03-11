@@ -10,6 +10,11 @@
     "randomcase": "./index.js"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:drew-y/randomcase.git"
+  },
+  "homepage": "https://github.com/drew-y/randomcase",
+  "author": "Drew Youngwerth",
   "license": "ISC"
 }
