@@ -5,20 +5,20 @@ Randomize the casing of any text. Can be used via CLI or Node.js API.
 ## Installation
 
 ```bash
-npm i -g randomcase # Take out the -g if using for a node package.
+npm i -g rcase # Take out the -g if using for a node package.
 ```
 
 ## CLI Usage
 
 Basic:
 ```bash
-randomcase "How are we doing today?"
+rcase "How are we doing today?"
 # Output: how aRE we doInG TodaY?
 ```
 
 Via Stdin:
 ```bash
-echo "How are we doing today?" | randomcase
+echo "How are we doing today?" | rcase
 # Ourput: HOw ARE WE dOiNg ToDay?
 ```
 

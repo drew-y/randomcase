@@ -29,7 +29,7 @@ ${randomcase("randomcase")}
 Randomize the casing of the provided text.
 
 Usage:
-randomcase <text>
+rcase <text>
 
 Text can also be supplied via stdin.
 
