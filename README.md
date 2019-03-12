@@ -25,7 +25,7 @@ echo "How are we doing today?" | rcase
 ## Node.js API
 
 ```javascript
-const randomcase = require("randomcase");
+import { randomcase } from "rcase";
 
 const randomCasedText = randomcase("My randomized case text");
 ```

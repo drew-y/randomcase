@@ -3,7 +3,7 @@ const arg = process.argv[2];
 
 
 /** Randomize the casing of a string */
-const randomcase = (text: string) => text
+export const randomcase = (text: string) => text
     .split("")
     .map(char => {
         const val = Math.random();
@@ -57,5 +57,3 @@ const cli = () => {
 }
 
 if (require.main === module) cli();
-
-export = randomcase;
