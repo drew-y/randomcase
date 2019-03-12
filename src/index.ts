@@ -3,7 +3,7 @@ const arg = process.argv[2];
 
 
 /** Randomize the casing of a string */
-const randomcase = text => text
+const randomcase = (text: string) => text
     .split("")
     .map(char => {
         const val = Math.random();
@@ -12,10 +12,10 @@ const randomcase = text => text
     })
     .join("");
 
-const readStdin = _ => {
+const readStdin = () => {
     process.stdin.setEncoding("utf8");
     process.stdin.on("readable", () => {
-        const chunk = process.stdin.read();
+        const chunk = process.stdin.read() as string;
         if (chunk === null) return;
         process.stdout.write(randomcase(chunk));
     });
@@ -37,7 +37,7 @@ Options:
 -h            Show the help menu.
 `
 
-const cli = _ => {
+const cli = () => {
     if (arg === "-h") {
         console.log(usage);
         return;
@@ -58,4 +58,4 @@ const cli = _ => {
 
 if (require.main === module) cli();
 
-module.exports = randomcase;
+export = randomcase;

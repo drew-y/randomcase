@@ -2,12 +2,15 @@
   "name": "rcase",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
   "scripts": {
+    "start": "ts-node src/index.ts",
+    "prepublishOnly": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "rcase": "./index.js"
+    "rcase": "./dist/index.js"
   },
   "keywords": [],
   "repository": {
@@ -16,5 +19,12 @@
   },
   "homepage": "https://github.com/drew-y/randomcase",
   "author": "Drew Youngwerth",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@types/node": "^11.11.1"
+  }
 }
