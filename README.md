@@ -19,7 +19,7 @@ rcase "How are we doing today?"
 Via Stdin:
 ```bash
 echo "How are we doing today?" | rcase
-# Ourput: HOw ARE WE dOiNg ToDay?
+# Output: HOw ARE WE dOiNg ToDay?
 ```
 
 ## Node.js API
